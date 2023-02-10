@@ -13,6 +13,13 @@ logGreeting(function(){ //Se crea una funcion dentro del mismo parentesis. Funci
     console.log('Hello from function created on the fly'); 
 })
 
+//Interpolación de string "clasica"
+
+let logGreeting3 = (miNombre, miColor) => {
+    console.log("Hola " + miNombre + " buenos dias! Tu color favorito es el " + miColor); 
+}
+logGreeting3("Carlos", "azul"); 
+
 //Interpolacion de strings
 let color = "rojo"; 
 let talla = "M"; 
@@ -20,3 +27,6 @@ let modelo = "Clasico";
 console.log(`Juan tiene una playera talla ${talla} de color ${color} modelo ${modelo}`); 
 //Interpolacion 
 console.log("Juan tiene una playera talla " + talla + " de color " + color + " modelo " + modelo); 
+
+//Se hace referencia al documento greet
+require('./greet'); 
